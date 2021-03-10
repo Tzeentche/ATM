@@ -2,10 +2,16 @@ import java.util.Scanner;
 
 public class Operator {
 
-    static int readNumber(String msg) {
+    static int readIntNumber(String msg) {
         System.out.println(msg);
         Scanner scn = new Scanner(System.in);
         return scn.nextInt();
+    }
+
+    static double readDoubleNumber(String msg) {
+        System.out.println(msg);
+        Scanner scn = new Scanner(System.in);
+        return scn.nextDouble();
     }
 
     static String readString(String msg) {
@@ -51,6 +57,6 @@ public class Operator {
         System.out.println("3: *");
         System.out.println("4: /");
         System.out.println("5: %");
-        return readNumber("Please, enter number of operation:");
+        return readIntNumber("Please, enter number of operation:");
     }
 }
