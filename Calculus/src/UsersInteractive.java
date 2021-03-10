@@ -17,12 +17,12 @@ public class UsersInteractive {
 
             System.out.println("Result " + operator.doOperation(value1, value2));
 
-            yesNo = operator.readString("Continue? (Y\\N)?");
-
-            if (!"Y".equals(yesNo) || !"y".equals(yesNo)) {
-
+//            yesNo = operator.readString("Continue? (Y\\N)?");
+//
+//            if (!"Y".equals(yesNo) || !"y".equals(yesNo)) {
+//
                 System.exit(0);
-            }
+//            }
         }
     }
 }
