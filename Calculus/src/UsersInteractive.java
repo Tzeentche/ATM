@@ -9,8 +9,8 @@ public class UsersInteractive {
         String yesNo = "Y";
 
         while ("Y".equals(yesNo)) {
-            double value1 = operator.readNumber("Enter value 1: ");
-            double value2 = operator.readNumber("Enter value 2: ");
+            double value1 = operator.readDoubleNumber("Enter value 1: ");
+            double value2 = operator.readDoubleNumber("Enter value 2: ");
 
             System.out.println("Value 1 = " + value1);
             System.out.println("Value 2 = " + value2);
