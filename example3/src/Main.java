@@ -8,5 +8,9 @@ public class Main {
         for (Shape shape : shapes) {
             System.out.println(shape.square());
         }
+
+        for(Shape shape : shapes) {
+            System.out.println(shape.length());
+        }
     }
 }
