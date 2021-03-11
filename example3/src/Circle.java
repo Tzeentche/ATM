@@ -7,6 +7,11 @@ public class Circle extends Shape{
         return Math.PI*radius*radius;
     }
 
+    @Override
+    public double length() {
+        return 2 * (Math.PI*radius);
+    }
+
     public Circle(double radius) {
         this.radius = radius;
     }
