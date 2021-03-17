@@ -1,5 +1,4 @@
-
-import java.util.*;
+package main.java;
 
 public class UsersInteractive {
 
