@@ -30,4 +30,5 @@ public class Operator {
         }
         return (variable / 10);
     }
+
 }

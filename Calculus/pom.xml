@@ -5,7 +5,6 @@
 
     <reporting>
         <plugins>
-
         <!-- `mvn clean test site` to generate the junit html report-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

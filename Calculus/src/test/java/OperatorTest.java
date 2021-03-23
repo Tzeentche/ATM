@@ -115,4 +115,5 @@ class OperatorTest {
             assertEquals(0, operator.divide(0, 0));
         }
     }
+
 }
