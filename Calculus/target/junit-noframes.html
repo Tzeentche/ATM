@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results.</title>
+<style type="text/css">
+      body {
+        font:normal 68% verdana,arial,helvetica;
+        color:#000000;
+      }
+      table tr td, table tr th {
+          font-size: 68%;
+      }
+      table.details tr th{
+        font-weight: bold;
+        text-align:left;
+        background:#a6caf0;
+      }
+      table.details tr td{
+        background:#eeeee0;
+      }
+
+      p {
+        line-height:1.5em;
+        margin-top:0.5em; margin-bottom:1.0em;
+      }
+      h1 {
+        margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+      }
+      h2 {
+        margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+      }
+      h3 {
+        margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+      }
+      h4 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h5 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      h6 {
+        margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+      }
+      .Error {
+        font-weight:bold; color:red;
+      }
+      .Failure {
+        font-weight:bold; color:purple;
+      }
+      .Properties {
+        text-align:right;
+      }
+      </style>
+<script language="JavaScript" type="text/javascript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['.OperatorTest$Divide'] = new Array();
+    
+        cur['basedir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['file.encoding'] = 'Cp1251';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['idea.version2020.1.3'] = 'true';
+    
+        cur['java.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['java.class.version'] = '58.0';
+    
+        cur['java.home'] = 'C:\\jdk1402';
+    
+        cur['java.io.tmpdir'] = 'C:\\Users\\IADC8B~1.SUH\\AppData\\Local\\Temp\\';
+    
+        cur['java.library.path'] = 'C:\\jdk1402\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\jdk1402\\bin;C:\\Users\\ia.suhaka\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ia.suhaka\\AppData\\Local\\Programs\\Git\\cmd;.';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '14.0.2+12-46';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '14';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'https://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'https://bugreport.java.com/bugreport/';
+    
+        cur['java.version'] = '14.0.2';
+    
+        cur['java.version.date'] = '2020-07-14';
+    
+        cur['java.vm.compressedOopsMode'] = '32-bit';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '14';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '14.0.2+12-46';
+    
+        cur['jdk.debug'] = 'release';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['localRepository'] = 'C:\\Users\\ia.suhaka\\.m2\\repository';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Windows 10';
+    
+        cur['os.version'] = '10.0';
+    
+        cur['path.separator'] = ';';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.library.path'] = 'C:\\jdk1402\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'amd64';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579 2021-03-23T15-50-45_347-jvmRun1 surefire15409377925538862663tmp surefire_017172924027411651638tmp';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'Cp1251';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = '';
+    
+        cur['surefire.real.class.path'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar';
+    
+        cur['surefire.test.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['user.country'] = 'RU';
+    
+        cur['user.dir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['user.home'] = 'C:\\Users\\ia.suhaka';
+    
+        cur['user.language'] = 'ru';
+    
+        cur['user.name'] = 'ia.suhaka';
+    
+        cur['user.script'] = '';
+    
+        cur['user.timezone'] = 'Europe/Minsk';
+    
+        cur['user.variant'] = '';
+    
+    cur = TestCases['.OperatorTest$Minus'] = new Array();
+    
+        cur['basedir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['file.encoding'] = 'Cp1251';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['idea.version2020.1.3'] = 'true';
+    
+        cur['java.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['java.class.version'] = '58.0';
+    
+        cur['java.home'] = 'C:\\jdk1402';
+    
+        cur['java.io.tmpdir'] = 'C:\\Users\\IADC8B~1.SUH\\AppData\\Local\\Temp\\';
+    
+        cur['java.library.path'] = 'C:\\jdk1402\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\jdk1402\\bin;C:\\Users\\ia.suhaka\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ia.suhaka\\AppData\\Local\\Programs\\Git\\cmd;.';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '14.0.2+12-46';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '14';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'https://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'https://bugreport.java.com/bugreport/';
+    
+        cur['java.version'] = '14.0.2';
+    
+        cur['java.version.date'] = '2020-07-14';
+    
+        cur['java.vm.compressedOopsMode'] = '32-bit';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '14';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '14.0.2+12-46';
+    
+        cur['jdk.debug'] = 'release';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['localRepository'] = 'C:\\Users\\ia.suhaka\\.m2\\repository';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Windows 10';
+    
+        cur['os.version'] = '10.0';
+    
+        cur['path.separator'] = ';';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.library.path'] = 'C:\\jdk1402\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'amd64';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579 2021-03-23T15-50-45_347-jvmRun1 surefire15409377925538862663tmp surefire_017172924027411651638tmp';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'Cp1251';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = '';
+    
+        cur['surefire.real.class.path'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar';
+    
+        cur['surefire.test.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['user.country'] = 'RU';
+    
+        cur['user.dir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['user.home'] = 'C:\\Users\\ia.suhaka';
+    
+        cur['user.language'] = 'ru';
+    
+        cur['user.name'] = 'ia.suhaka';
+    
+        cur['user.script'] = '';
+    
+        cur['user.timezone'] = 'Europe/Minsk';
+    
+        cur['user.variant'] = '';
+    
+    cur = TestCases['.OperatorTest$Multiply'] = new Array();
+    
+        cur['basedir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['file.encoding'] = 'Cp1251';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['idea.version2020.1.3'] = 'true';
+    
+        cur['java.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['java.class.version'] = '58.0';
+    
+        cur['java.home'] = 'C:\\jdk1402';
+    
+        cur['java.io.tmpdir'] = 'C:\\Users\\IADC8B~1.SUH\\AppData\\Local\\Temp\\';
+    
+        cur['java.library.path'] = 'C:\\jdk1402\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\jdk1402\\bin;C:\\Users\\ia.suhaka\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ia.suhaka\\AppData\\Local\\Programs\\Git\\cmd;.';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '14.0.2+12-46';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '14';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'https://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'https://bugreport.java.com/bugreport/';
+    
+        cur['java.version'] = '14.0.2';
+    
+        cur['java.version.date'] = '2020-07-14';
+    
+        cur['java.vm.compressedOopsMode'] = '32-bit';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '14';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '14.0.2+12-46';
+    
+        cur['jdk.debug'] = 'release';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['localRepository'] = 'C:\\Users\\ia.suhaka\\.m2\\repository';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Windows 10';
+    
+        cur['os.version'] = '10.0';
+    
+        cur['path.separator'] = ';';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.library.path'] = 'C:\\jdk1402\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'amd64';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579 2021-03-23T15-50-45_347-jvmRun1 surefire15409377925538862663tmp surefire_017172924027411651638tmp';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'Cp1251';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = '';
+    
+        cur['surefire.real.class.path'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar';
+    
+        cur['surefire.test.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['user.country'] = 'RU';
+    
+        cur['user.dir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['user.home'] = 'C:\\Users\\ia.suhaka';
+    
+        cur['user.language'] = 'ru';
+    
+        cur['user.name'] = 'ia.suhaka';
+    
+        cur['user.script'] = '';
+    
+        cur['user.timezone'] = 'Europe/Minsk';
+    
+        cur['user.variant'] = '';
+    
+    cur = TestCases['.OperatorTest$Summ'] = new Array();
+    
+        cur['basedir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['file.encoding'] = 'Cp1251';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['idea.version2020.1.3'] = 'true';
+    
+        cur['java.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['java.class.version'] = '58.0';
+    
+        cur['java.home'] = 'C:\\jdk1402';
+    
+        cur['java.io.tmpdir'] = 'C:\\Users\\IADC8B~1.SUH\\AppData\\Local\\Temp\\';
+    
+        cur['java.library.path'] = 'C:\\jdk1402\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\jdk1402\\bin;C:\\Users\\ia.suhaka\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ia.suhaka\\AppData\\Local\\Programs\\Git\\cmd;.';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '14.0.2+12-46';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '14';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'https://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'https://bugreport.java.com/bugreport/';
+    
+        cur['java.version'] = '14.0.2';
+    
+        cur['java.version.date'] = '2020-07-14';
+    
+        cur['java.vm.compressedOopsMode'] = '32-bit';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '14';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '14.0.2+12-46';
+    
+        cur['jdk.debug'] = 'release';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['localRepository'] = 'C:\\Users\\ia.suhaka\\.m2\\repository';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Windows 10';
+    
+        cur['os.version'] = '10.0';
+    
+        cur['path.separator'] = ';';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.library.path'] = 'C:\\jdk1402\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'amd64';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579 2021-03-23T15-50-45_347-jvmRun1 surefire15409377925538862663tmp surefire_017172924027411651638tmp';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'Cp1251';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = '';
+    
+        cur['surefire.real.class.path'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar';
+    
+        cur['surefire.test.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['user.country'] = 'RU';
+    
+        cur['user.dir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['user.home'] = 'C:\\Users\\ia.suhaka';
+    
+        cur['user.language'] = 'ru';
+    
+        cur['user.name'] = 'ia.suhaka';
+    
+        cur['user.script'] = '';
+    
+        cur['user.timezone'] = 'Europe/Minsk';
+    
+        cur['user.variant'] = '';
+    
+    cur = TestCases['.OperatorTest'] = new Array();
+    
+        cur['basedir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['file.encoding'] = 'Cp1251';
+    
+        cur['file.separator'] = '\\';
+    
+        cur['idea.version2020.1.3'] = 'true';
+    
+        cur['java.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['java.class.version'] = '58.0';
+    
+        cur['java.home'] = 'C:\\jdk1402';
+    
+        cur['java.io.tmpdir'] = 'C:\\Users\\IADC8B~1.SUH\\AppData\\Local\\Temp\\';
+    
+        cur['java.library.path'] = 'C:\\jdk1402\\bin;C:\\WINDOWS\\Sun\\Java\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\jdk1402\\bin;C:\\Users\\ia.suhaka\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ia.suhaka\\AppData\\Local\\Programs\\Git\\cmd;.';
+    
+        cur['java.runtime.name'] = 'OpenJDK Runtime Environment';
+    
+        cur['java.runtime.version'] = '14.0.2+12-46';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.specification.version'] = '14';
+    
+        cur['java.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vendor.url'] = 'https://java.oracle.com/';
+    
+        cur['java.vendor.url.bug'] = 'https://bugreport.java.com/bugreport/';
+    
+        cur['java.version'] = '14.0.2';
+    
+        cur['java.version.date'] = '2020-07-14';
+    
+        cur['java.vm.compressedOopsMode'] = '32-bit';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'OpenJDK 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.specification.version'] = '14';
+    
+        cur['java.vm.vendor'] = 'Oracle Corporation';
+    
+        cur['java.vm.version'] = '14.0.2+12-46';
+    
+        cur['jdk.debug'] = 'release';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['localRepository'] = 'C:\\Users\\ia.suhaka\\.m2\\repository';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.name'] = 'Windows 10';
+    
+        cur['os.version'] = '10.0';
+    
+        cur['path.separator'] = ';';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.boot.library.path'] = 'C:\\jdk1402\\bin';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = 'amd64';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579 2021-03-23T15-50-45_347-jvmRun1 surefire15409377925538862663tmp surefire_017172924027411651638tmp';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'Cp1251';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = '';
+    
+        cur['surefire.real.class.path'] = 'C:\\Users\\ia.suhaka\\AppData\\Local\\Temp\\surefire5761288939285691579\\surefirebooter12316287375332862368.jar';
+    
+        cur['surefire.test.class.path'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus\\target\\test-classes;C:\\Users\\ia.suhaka\\IdeaProjects\\Kalka\\target\\classes;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.11\\commons-lang3-3.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\junit\\junit\\4.13\\junit-4.13.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\vintage\\junit-vintage-engine\\5.7.0\\junit-vintage-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apiguardian\\apiguardian-api\\1.1.0\\apiguardian-api-1.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-engine\\1.7.0\\junit-platform-engine-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-api\\5.7.0\\junit-jupiter-api-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\opentest4j\\opentest4j\\1.2.0\\opentest4j-1.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\platform\\junit-platform-commons\\1.7.0\\junit-platform-commons-1.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-engine\\5.7.0\\junit-jupiter-engine-5.7.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\junit\\jupiter\\junit-jupiter-params\\5.8.0-M1\\junit-jupiter-params-5.8.0-M1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\plugins\\maven-project-info-reports-plugin\\3.1.1\\maven-project-info-reports-plugin-3.1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-api\\3.0\\maven-reporting-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\reporting\\maven-reporting-impl\\3.0.0\\maven-reporting-impl-3.0.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-utils\\3.2.0\\maven-shared-utils-3.2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-artifact\\3.0\\maven-artifact-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-core\\3.0\\maven-core-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings-builder\\3.0\\maven-settings-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model-builder\\3.0\\maven-model-builder-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-aether-provider\\3.0\\maven-aether-provider-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-impl\\1.7\\aether-impl-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-spi\\1.7\\aether-spi-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-api\\1.7\\aether-api-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\aether\\aether-util\\1.7\\aether-util-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-plexus\\1.4.2\\sisu-inject-plexus-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-inject-bean\\1.4.2\\sisu-inject-bean-1.4.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\sisu\\sisu-guice\\2.1.7\\sisu-guice-2.1.7-noaop.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-classworlds\\2.2.3\\plexus-classworlds-2.2.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-component-annotations\\1.5.5\\plexus-component-annotations-1.5.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-sec-dispatcher\\1.3\\plexus-sec-dispatcher-1.3.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\sonatype\\plexus\\plexus-cipher\\1.4\\plexus-cipher-1.4.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-model\\3.0\\maven-model-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-plugin-api\\3.0\\maven-plugin-api-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-repository-metadata\\3.0\\maven-repository-metadata-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\maven-settings\\3.0\\maven-settings-3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-dependency-tree\\2.2\\maven-dependency-tree-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\eclipse\\aether\\aether-util\\0.9.0.M2\\aether-util-0.9.0.M2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-shared-jar\\1.2\\maven-shared-jar-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-digest\\1.0\\plexus-digest-1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-container-default\\1.0-alpha-8\\plexus-container-default-1.0-alpha-8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\classworlds\\classworlds\\1.1-alpha-2\\classworlds-1.1-alpha-2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-collections\\commons-collections\\3.1\\commons-collections-3.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\bcel\\bcel\\6.2\\bcel-6.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-common-artifact-filters\\3.1.0\\maven-common-artifact-filters-3.1.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\shared\\maven-artifact-transfer\\0.12.0\\maven-artifact-transfer-0.12.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.5\\slf4j-api-1.7.5.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-api\\1.10.0\\maven-scm-api-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-manager-plexus\\1.10.0\\maven-scm-manager-plexus-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-hg\\1.10.0\\maven-scm-provider-hg-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-perforce\\1.10.0\\maven-scm-provider-perforce-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-starteam\\1.10.0\\maven-scm-provider-starteam-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svn-commons\\1.10.0\\maven-scm-provider-svn-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-svnexe\\1.10.0\\maven-scm-provider-svnexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvs-commons\\1.10.0\\maven-scm-provider-cvs-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsexe\\1.10.0\\maven-scm-provider-cvsexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-cvsjava\\1.10.0\\maven-scm-provider-cvsjava-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\netbeans\\lib\\cvsclient\\20060125\\cvsclient-20060125.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\ch\\ethz\\ganymed\\ganymed-ssh2\\build210\\ganymed-ssh2-build210.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-git-commons\\1.10.0\\maven-scm-provider-git-commons-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\scm\\maven-scm-provider-gitexe\\1.10.0\\maven-scm-provider-gitexe-1.10.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-io\\commons-io\\2.2\\commons-io-2.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-sink-api\\1.9.1\\doxia-sink-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-logging-api\\1.9.1\\doxia-logging-api-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-core\\1.9.1\\doxia-core-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.5.8\\httpclient-4.5.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.4.11\\httpcore-4.4.11.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-decoration-model\\1.9.2\\doxia-decoration-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-site-renderer\\1.9.2\\doxia-site-renderer-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-skin-model\\1.9.2\\doxia-skin-model-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml\\1.9.1\\doxia-module-xhtml-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-module-xhtml5\\1.9.1\\doxia-module-xhtml5-1.9.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-velocity\\1.2\\plexus-velocity-1.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity\\1.7\\velocity-1.7.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\velocity\\velocity-tools\\2.0\\velocity-tools-2.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-chain\\commons-chain\\1.1\\commons-chain-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\dom4j\\dom4j\\1.1\\dom4j-1.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\apache\\maven\\doxia\\doxia-integration-tools\\1.9.2\\doxia-integration-tools-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-i18n\\1.0-beta-10\\plexus-i18n-1.0-beta-10.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-utils\\3.3.0\\plexus-utils-3.3.0.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\org\\codehaus\\plexus\\plexus-interpolation\\1.26\\plexus-interpolation-1.26.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-validator\\commons-validator\\1.6\\commons-validator-1.6.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.9.2\\commons-beanutils-1.9.2.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-digester\\commons-digester\\1.8.1\\commons-digester-1.8.1.jar;C:\\Users\\ia.suhaka\\.m2\\repository\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar;';
+    
+        cur['user.country'] = 'RU';
+    
+        cur['user.dir'] = 'C:\\Users\\ia.suhaka\\IdeaProjects\\Calculus';
+    
+        cur['user.home'] = 'C:\\Users\\ia.suhaka';
+    
+        cur['user.language'] = 'ru';
+    
+        cur['user.name'] = 'ia.suhaka';
+    
+        cur['user.script'] = '';
+    
+        cur['user.timezone'] = 'Europe/Minsk';
+    
+        cur['user.variant'] = '';
+    </script><script language="JavaScript" type="text/javascript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style>")
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<a name="top"></a>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org">JUnit</a> and <a href="http://ant.apache.org/ant">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Tests</th><th>Failures</th><th>Errors</th><th>Success rate</th><th>Time</th>
+</tr>
+<tr valign="top" class="">
+<td>18</td><td>0</td><td>0</td><td>100.00%</td><td>0.244</td>
+</tr>
+</table>
+<table width="95%" border="0">
+<tr>
+<td style="text-align: justify;">
+        Note: <i>failures</i> are anticipated and checked for with assertions while <i>errors</i> are unanticipated.
+        </td>
+</tr>
+</table>
+<hr align="left" width="95%" size="1">
+<h2>Packages</h2>
+        Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.
+        <table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="">
+<td><a href="#"></a></td><td>18</td><td>0</td><td>0</td><td>0.244</td><td></td><td></td>
+</tr>
+</table>
+<hr align="left" width="95%" size="1">
+<a name=""></a>
+<h3>Package </h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="">
+<td><a href="#OperatorTest$Divide">OperatorTest$Divide</a></td><td>5</td><td>0</td><td>0</td><td>0.076</td><td></td><td></td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#OperatorTest$Minus">OperatorTest$Minus</a></td><td>4</td><td>0</td><td>0</td><td>0.005</td><td></td><td></td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#OperatorTest$Multiply">OperatorTest$Multiply</a></td><td>5</td><td>0</td><td>0</td><td>0.010</td><td></td><td></td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#OperatorTest$Summ">OperatorTest$Summ</a></td><td>4</td><td>0</td><td>0</td><td>0.008</td><td></td><td></td>
+</tr>
+<tr valign="top" class="">
+<td><a href="#OperatorTest">OperatorTest</a></td><td>0</td><td>0</td><td>0</td><td>0.145</td><td></td><td></td>
+</tr>
+</table>
+<a href="#top">Back to top</a>
+<p></p>
+<p></p>
+<hr align="left" width="95%" size="1">
+<a name="OperatorTest"></a>
+<h3>TestCase OperatorTest</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('.OperatorTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="OperatorTest$Divide"></a>
+<h3>TestCase OperatorTest$Divide</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>divideTwoNegativesReturnPositive</td><td>Success</td><td></td><td>0.042</td>
+</tr>
+<tr valign="top" class="">
+<td>divideZerosReturnZero</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="">
+<td>divideOneNegativeOnePositiveRetrnNegative</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+<tr valign="top" class="">
+<td>divideTwoPositivesReturnPositive</td><td>Success</td><td></td><td>0.008</td>
+</tr>
+<tr valign="top" class="">
+<td>divideByZeroReturnZero</td><td>Success</td><td></td><td>0.002</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('.OperatorTest$Divide');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="OperatorTest$Minus"></a>
+<h3>TestCase OperatorTest$Minus</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>minusZerosReturnZero</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="">
+<td>minusTwoNegativesReturnNegative</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="">
+<td>minusOneZeroReturnDsntChng</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="">
+<td>minusTwoPositivesReturnPositive</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('.OperatorTest$Minus');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="OperatorTest$Multiply"></a>
+<h3>TestCase OperatorTest$Multiply</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>multiplyNegativeAndZeroReturnZero</td><td>Success</td><td></td><td>0.006</td>
+</tr>
+<tr valign="top" class="">
+<td>multiplyTwoPositivesReturnPositive</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="">
+<td>multiplyZerosReturnZero</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="">
+<td>multiplyOneNegativeOnePositiveRetrnNegative</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="">
+<td>multiplyTwoNegativesReturnPositive</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('.OperatorTest$Multiply');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a><a name="OperatorTest$Summ"></a>
+<h3>TestCase OperatorTest$Summ</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>summTwoPositivesReturnPositive</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="">
+<td>summOneZeroReturnDsntChng</td><td>Success</td><td></td><td>0.001</td>
+</tr>
+<tr valign="top" class="">
+<td>summTwoNegativesReturnNegative</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+<tr valign="top" class="">
+<td>summTwoZerosReturnZero</td><td>Success</td><td></td><td>0.000</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('.OperatorTest$Summ');">
+                    Properties &raquo;
+                </a>
+</div>
+<p></p>
+<a href="#top">Back to top</a>
+</body>
+</html>
