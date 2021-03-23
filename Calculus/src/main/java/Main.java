@@ -5,5 +5,5 @@ public class Main {
             UsersInteractive usersInteractive = new UsersInteractive();
             usersInteractive.userOutput();
         }
-        
+
 }
