@@ -1,0 +1,27 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="www">
+    <element name="school">
+        <complexType>
+            <sequence>
+                <element name="principle_name" type="string"/>
+                <element name="class" maxOccurs="unbounded" minOccurs="1">
+                    <complexType>
+                        <sequence>
+                            <element name="class_average" type="string"/>
+                            <element name="student" maxOccurs="unbounded" minOccurs="1">
+                                <complexType>
+                                    <sequence>
+                                        <element name="name" type="string"/>
+                                        <element name="last_name" type="string"/>
+                                        <element name="average_grade" type="string"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                        <attribute name="name" type="string" />
+                        <attribute name="teacher" type="string" />
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

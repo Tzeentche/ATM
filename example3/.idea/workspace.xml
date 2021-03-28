@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e891cd6f-a4ed-40ed-a951-3730a3f5f20e" name="Default Changelist" comment="Create and refactored CircleTest class.">
+      <change afterPath="$PROJECT_DIR$/../Calculus/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculus/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calculus/HW2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XmlDances/123.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XmlDances/XmlDances.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XmlDances/class.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XmlDances/schema.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/calc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../calc/src/main/java/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/example3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/src/sgsdgsdg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculus/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculus/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculus/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/Calculus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/out/production/Calculus/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/out/production/Calculus/Operator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/out/production/Calculus/UsersInteractive.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Calculus/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/src/main/java/TestCases.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calculus/src/test/java/UsersInteractiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../example31/src/test/java/CircleTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,45 +141,65 @@
       <option name="project" value="LOCAL" />
       <updated>1615929630310</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Replaced files.">
+      <created>1616016877415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616016877415</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create and refactored CircleTest class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create and refactored CircleTest class." />
+    <MESSAGE value="Replaced files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="71" key="#Project_Structure" timestamp="1615928803397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="71" key="#Project_Structure/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615928803397" />
-    <state x="424" y="107" key="CommitChangelistDialog2" timestamp="1615929665066">
+    <state x="424" y="107" key="CommitChangelistDialog2" timestamp="1616016875266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="424" y="107" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615929665066" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1616016801150">
+    <state x="424" y="107" key="CommitChangelistDialog2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016875266" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1616016905868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016801150" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1616016801150">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016905868" />
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1616016906686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016801150" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1616016801150">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016906686" />
+    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1616016906686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016801150" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1616016801150">
+    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016906686" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1616016906686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016801150" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016906686" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1616016906686">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016906686" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1615929779740">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615929779740" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616016886174">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1616016886174" />
     <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1615929157717">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="115" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615929157717" />
+    <state x="209" y="114" key="new project wizard" timestamp="1616425791997">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="114" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1616425791997" />
   </component>
 </project>

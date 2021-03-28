@@ -1,0 +1,13 @@
+<!ELEMENT school (class+,principal_name)>
+        <!ATTLIST principal_name #REQUIRED>
+        <!ELEMENT class (student+, class_average)>
+        <!ATTLIST class
+                name CDATA #REQUIRED
+                teacher CDATA #REQUIRED
+                >
+        <!ELEMENT principal_name (#PCDATA)>
+        <!ELEMENT student (name,last_name,average_grade)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT last_name (#PCDATA)>
+        <!ELEMENT average_grade (#PCDATA)>
+        <!ELEMENT class_average (#PCDATA)>
