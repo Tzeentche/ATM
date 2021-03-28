@@ -1,0 +1,14 @@
+/.git/
+/.idea/
+/calc/
+/Calculus/
+/CommonLangAndMaven/
+/example3/
+/example31/
+/HW2/
+/untitled/
+/XmlDances/
+*.iml
+/out/
+/target/
+hs_err_pid9020.log
