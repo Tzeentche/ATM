@@ -1,0 +1,25 @@
+<?xml version="1.1" encoding="windows-1251"?>
+<!DOCTYPE school SYSTEM>
+<school>
+    <principal_name></principal_name>
+    <class>
+        <student>
+            <name></name>
+            <last_name></last_name>
+            <average_grade></average_grade>
+        </student>
+        <student>
+            <name></name>
+            <last_name></last_name>
+            <average_grade></average_grade>
+        </student>
+        <student>
+            <name></name>
+            <last_name></last_name>
+            <average_grade></average_grade>
+        </student>
+        <student>
+            <name></name>
+            <last_name></last_name>
+            <average_grade></average_grade>
+        <class_average></class_average>
