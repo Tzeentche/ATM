@@ -37,7 +37,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- сюда пишем наши сьюты -->
-                        <suiteXmlFile>unit-testng.xml</suiteXmlFile>
+<!--                        <suiteXmlFile>unit-testng.xml</suiteXmlFile>-->
                         <suiteXmlFile>integration-testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
