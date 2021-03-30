@@ -1,0 +1,26 @@
+<?xml version="1.1" encoding="windows-1251"?>
+<!--<!DOCTYPE school SYSTEM "https://testng.org/testng-1.0.dtd" >-->
+<school>
+    <principal_name></principal_name>
+    <class>
+        <name></name>
+        <last_name></last_name>
+        <average_grade></average_grade>
+    </student>
+    <student>
+        <name></name>
+        <last_name></last_name>
+        <average_grade></average_grade>
+    </student>
+    <student>
+        <name></name>
+        <last_name></last_name>
+        <average_grade></average_grade>
+    <student>
+        <name></name>
+        <last_name></last_name>
+        <average_grade></average_grade>
+        <class_average></class_average>
+    </student>
+</class>
+        </school>
