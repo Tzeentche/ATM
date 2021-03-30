@@ -1,0 +1,28 @@
+<?xml version="1.1" encoding="windows-1251"?>
+<!--<!DOCTYPE school SYSTEM "class.dtd">-->
+<school>
+    <principal_name>Noname Lastname</principal_name>
+    <class name="1A" teacher="Ivanova I.I">
+        <student>
+            <name>Alex</name>
+            <last_name>Strakh</last_name>
+            <average_grade>6.4</average_grade>
+        </student>
+        <student>
+            <name>Ihar</name>
+            <last_name>Vavilau</last_name>
+            <average_grade>8</average_grade>
+        </student>
+        <student>
+            <name></name>
+            <last_name></>
+            <average_grade></average_grade>
+        </student>
+        <student>
+            <name>Olga</name>
+            <last_name>Razumova</last_name>
+            <average_grade>4.7</average_grade>
+        </student>
+        <class_average>"7.4"</class_average>
+    </class>
+</school>
