@@ -6,7 +6,6 @@
         <name></name>
         <last_name></last_name>
         <average_grade></average_grade>
-    </student>
     <student>
         <name></name>
         <last_name></last_name>
@@ -16,11 +15,10 @@
         <name></name>
         <last_name></last_name>
         <average_grade></average_grade>
-    <student>
-        <name></name>
-        <last_name></last_name>
-        <average_grade></average_grade>
-        <class_average></class_average>
-    </student>
-</class>
-        </school>
+        <student>
+            <name></name>
+            <last_name></last_name>
+            <average_grade></average_grade>
+            <class_average></class_average>
+    </class>
+</school>
