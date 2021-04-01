@@ -1,34 +1,34 @@
 package parser;
 
-import org.apache.tools.ant.taskdefs.condition.IsTrue;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import utilities.ListADT;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.testng.Assert.*;
 
 public class XMLParserTest {
 
-    XMLParser xmlParser;
+    @DataProvider(name = "validXml")
+    public Object[] getData(){
+        Object[] myData = {"./src/xmlFiles/Sample1.xml",
+                "./src/xmlFiles/Sample2.xml",
+                "./src/xmlFiles/Sample3.xml",
+                "./src/xmlFiles/Sample4.xml",
+                "./src/xmlFiles/Sample5.xml",
+                "./src/xmlFiles/Sample6.xml",
+                "./src/xmlFiles/Sample7.xml",
+                "./src/xmlFiles/Sample8.xml",
+                "./src/xmlFiles/Sample9.xml",
+                "./src/xmlFiles/Sample10.xml"};
+        return myData;
+    }
 
-    @Test
-    public void testParseDocument() {
-        ListADT<String> list;
-        xmlParser = new XMLParser("C:\\Users\\Horus\\Sugako\\HW3\\src\\xmlFiles\\Sample10.xml");
-        xmlParser.parseDocument();
-        list = xmlParser.getErrors();
-        if(list.isEmpty()) {
-            Assert.assertTrue(true);
-
-        } else{
-            for(int i = 0; i < list.size(); i++) {
-                System.out.println("What's happened: " + list.get(i));
-            }
-            Assert.assertTrue(false);
+    @Test(dataProvider = "validXml")
+    public void testXml(String param) {
+        XMLParser parser = new XMLParser(param);
+        try {
+            parser.parseDocument();
+        } catch (Exception e) {
+            Assert.fail("Unexpected exception "+e.getMessage());
         }
-
+        Assert.assertTrue(parser.getErrors().isEmpty(), "Parser found an error in valid file");
     }
 }
