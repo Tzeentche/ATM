@@ -22,7 +22,7 @@ public class XMLParserTest {
     }
 
     @Test(dataProvider = "validXml")
-    public void testXml(String param) {
+    public void testXmlMixed(String param) {
         XMLParser parser = new XMLParser(param);
         try {
             parser.parseDocument();
@@ -31,4 +31,5 @@ public class XMLParserTest {
         }
         Assert.assertTrue(parser.getErrors().isEmpty(), "Parser found an error in valid file");
     }
+
 }
