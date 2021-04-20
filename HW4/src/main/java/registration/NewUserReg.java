@@ -39,8 +39,8 @@ public class NewUserReg {
             Class.forName(DBDriver);
             co = DriverManager.getConnection(DBUrl);
             System.out.println("Connected1");
-            co.close();
-             System.out.println("Close connection");
+//            co.close();
+            System.out.println("Close connection");
 
         } catch (Exception e) {
              System.out.println(e.getMessage());

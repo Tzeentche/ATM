@@ -33,6 +33,7 @@ public class UsInteract {
         int variable;
         if (scanner.hasNextInt()){
             variable = scanner.nextInt();
+
         } else {
             System.out.println("You entered wrong symbol. Please, try again.");
             scanner.next();
@@ -97,7 +98,7 @@ public class UsInteract {
 
         } else if ("W".equals(result) || "w".equals(result)) {
             System.out.println("Your choose was Withdraw.");
-            takeUserAcc.withdraw();
+            takeUserAcc.substractor();
 
         } else if ("E".equals(result) || "e".equals(result)) {
 
@@ -108,5 +109,53 @@ public class UsInteract {
         }
     }
 
+    public static void curreciesFilling() {
 
+        int inResult = usersInt();
+        int inSumm;
+
+        if (inResult > 4 || inResult < 1) {
+
+            System.out.println("You entered wrong value! Try again!");
+            inResult = usersInt();
+
+        } else {
+
+            System.out.println("Please, enter your summ, biggest then 0 and less then 100.000.000: ");
+            inSumm = usersInt();
+
+            if (inSumm < 1 || inSumm > 100000000) {
+                System.out.println("You entered wrong value. Let's try again! ");
+                inSumm = usersInt();
+
+            }
+
+            fillUserAcc.filler(inResult, inSumm);
+        }
+    }
+
+        public static void curreciesExtract() {
+
+            int exResult = usersInt();
+            int exSumm;
+
+            if (exResult > 4 || exResult < 1) {
+
+                System.out.println("You entered wrong value! Try again!");
+                exResult = usersInt();
+
+            } else {
+
+                System.out.println("Please, enter your summ, biggest then 0 and less then 100.000.000: ");
+                exSumm = usersInt();
+
+                if (exSumm < 1 || exSumm > 100000000) {
+                    System.out.println("You entered wrong value. Let's try again! ");
+                    exSumm = usersInt();
+
+                }
+
+                takeUserAcc.withdraw(exResult, exSumm);
+            }
+    }
 }

@@ -5,24 +5,25 @@ import usersInteractive.UsInteract;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.*;
 
 import static registration.NewUserReg.*;
 import static usersInteractive.UsInteract.fillOrWithdraw;
 
 public class AddUserAcc {
 
+    enum Currencies { BYN, USD, RUB, EUR};
+
     Connection co;
     String account = "";
     UsInteract ui = new UsInteract();
     String valute = "";
+    String usersId = "";
+    NewUserReg newUserReg = new NewUserReg();
+    String userName = newUserReg.getName();
+    Currencies[] currencies = Currencies.values();
 
     public void accRegistration() {
-
-        String query1 = "SELECT UserId FROM Users WHERE name = ";
-        String userName = "";
-
-        String query2 = "INSERT INTO Account (userId, balance, currency) " +
-                "VALUES ('" + userId + "', '" + address + "')";
 
         try {
 
@@ -37,10 +38,26 @@ public class AddUserAcc {
             System.out.println("Acc registration crashed!");
         }
 
+        try (Statement statement = co.createStatement();) {
+            String query1 = "SELECT UserId FROM Users WHERE name = '"+ userName +"' ";
+            ResultSet rs1 = statement.executeQuery(query1);
 
+            for(Currencies s : currencies) {
+                String query2 = "INSERT INTO Account (userId, balance, currency) " +
+                        "VALUES ('" + rs1 + "', '" + 0 + "', '" + currencies + "')";
 
+                ResultSet rs2 = statement.executeQuery(query2);
+                rs2.close();
+            }
 
+            System.out.println("All is correct!");
 
+            rs1.close();
+
+        } catch (Exception e) {
+
+            System.out.println(e.getMessage());
+        }
 
         System.out.println("Your account was registered.");
         try {
