@@ -1,12 +1,20 @@
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 public class TvSets {
+
+    WebDriver driver = new ChromeDriver();
 
         @BeforeAll
         public static void init() {
@@ -15,18 +23,33 @@ public class TvSets {
 
         @Test
         public void test() throws InterruptedException {
-            WebDriver driver = new ChromeDriver();
+            JavascriptExecutor js = (JavascriptExecutor) driver;
             driver.get("https://onliner.by");
-            driver.findElement(By.xpath("//*[@id=\"container\"]/div/div/header/div[2]/div/nav/ul[1]/li[1]/a[2]/span")).click();
-            Thread.sleep(1000);
-            driver.findElement(By.xpath("//*[@id=\"container\"]/div/div/div/div/div[1]/ul/li[2]/span[2]/span")).click();
-            Thread.sleep(1000);
-            driver.findElement(By.xpath("//*[@id=\"widget-9101\"]/div/a/h3")).click();
-            Thread.sleep(1000);
-            ((JavascriptExecutor)driver).executeScript("window.scrollBy(0, 250)");
-            Thread.sleep(1000);
+
+            driver.findElement(By.xpath("//span[@class=\"b-main-navigation__text\" and text()='Каталог']")).click();
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            driver.findElement(By.xpath("//span[@class=\"catalog-navigation-classifier__item-title-wrapper\" and text()='Электроника']")).click();
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            driver.findElement(By.xpath("//h3[@class=\"b-tile-header max-lines-2\" and text()='Телевизоры']")).click();
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            js.executeScript("window.scrollBy(0, 5000)");
             driver.findElement(By.xpath("//input[@value='lg']/following-sibling::span")).click();
+            driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
             Assertions.assertTrue(driver.findElement(By.xpath("//input[@value='lg']")).isSelected());
+//            Assertions.assertFalse(driver.findElement(By.xpath("//input[@value='samsung']")).isSelected());
+
+            List<WebElement> fullName = new ArrayList<>();
+            fullName = driver.findElements(By.xpath("//span[@data-bind=\"html: product.extended_name || product.full_name\"]"));
+
+            for(WebElement webElement : fullName) {
+                try {
+                    System.out.println("fullName = " + webElement.getText());
+
+                } catch (Exception e) {
+                    e.getMessage();
+                    System.out.println("Упаль: " + e);
+                }
+            }
 //            driver.quit();
         }
 }
