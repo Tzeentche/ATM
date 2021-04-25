@@ -14,21 +14,29 @@ public class UsInteract {
     static AddUserAcc addUserAcc = new AddUserAcc();
     static FillUserAcc fillUserAcc = new FillUserAcc();
     static TakeUserAcc takeUserAcc = new TakeUserAcc();
+    static String result;
 
     public static String usersInput() {
 
+        scanner.reset();
+
         String incoming;
         if (scanner.hasNext()){
-            incoming = scanner.next();
+            incoming = scanner.nextLine();
         } else {
             System.out.println("You entered wrong symbol. Please, try again.");
-            scanner.next();
+            scanner.nextLine();
             incoming = usersInput();
         }
+        System.out.println("Value is= " + incoming);
+//        scanner.close();
+
         return incoming;
     }
 
     public static int usersInt() {
+
+        scanner.reset();
 
         int variable;
         if (scanner.hasNextInt()){
@@ -36,9 +44,10 @@ public class UsInteract {
 
         } else {
             System.out.println("You entered wrong symbol. Please, try again.");
-            scanner.next();
+            scanner.nextInt();
             variable = usersInt();
         }
+//        scanner.close();
         return variable;
     }
 
@@ -63,7 +72,8 @@ public class UsInteract {
                 System.out.println("Good Bye! See you!");
 
             } else {
-                System.out.println("It's seems like unknown symbol. Please, try again next time.");
+                    System.out.println("It's seems like unknown symbole! Please, try again next time.");
+                    usersInput();
             }
     }
 
@@ -75,22 +85,22 @@ public class UsInteract {
         if ("Y".equals(result) || "y".equals(result)) {
             System.out.println("You choose was Y");
             System.out.println("Please, enter your address:");
-            address = usersInput().toString();
-
+            address = usersInput();
 
         } else if ("N".equals(result) || "n".equals(result)) {
             System.out.println("It's OK!");
 
         } else {
-            System.out.println("It's seems like unknown symbol. Please, try again next time.");
+            System.out.println("It's seems like unknown symbolss. Please, try again next time.");
         }
 
+        System.out.println("Address  UsInteract=" + address);
         return address;
     }
 
     public static void fillOrWithdraw() {
 
-        String result = usersInput();
+        result = usersInput();
 
         if ("F".equals(result) || "f".equals(result)) {
             System.out.println("You choose was Fill.");
@@ -105,7 +115,9 @@ public class UsInteract {
             System.exit(0);
 
         } else {
-            System.out.println("It's seems like unknown symbol. Please, try again next time.");
+            System.out.println("It's seems like unknown symblom. Please, try again next time.");
+            result = usersInput();
+//            fillOrWithdraw();
         }
     }
 

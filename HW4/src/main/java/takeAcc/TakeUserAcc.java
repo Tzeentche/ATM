@@ -3,38 +3,34 @@ package takeAcc;
 import addAcc.AddUserAcc;
 import registration.NewUserReg;
 
-import addAcc.AddUserAcc;
-import registration.NewUserReg;
+import java.sql.*;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
-
-import static registration.NewUserReg.DBDriver;
-import static registration.NewUserReg.DBUrl;
+import static addAcc.AddUserAcc.*;
+import static registration.NewUserReg.*;
 import static usersInteractive.UsInteract.*;
 
 public class TakeUserAcc {
 
-    NewUserReg newUserReg = new NewUserReg();
-    String userName = newUserReg.getName();
+//    NewUserReg newUserReg = new NewUserReg();
+    String userName;
     Connection co;
-    AddUserAcc addUserAcc = new AddUserAcc();
+    String rsOne = "", rsTwo = "", rsThree = "", rsFour = "";
 
     public void substractor() {
+
+        userName = getName();
 
         try {
 
             Class.forName(DBDriver);
             co = DriverManager.getConnection(DBUrl);
-            System.out.println("Connected1");
-            co.close();
-            System.out.println("Close connection");
+            System.out.println("ConnectedWithdrawing");
+//            co.close();
+//            System.out.println("Close connection");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            System.out.println("Acc registration crashed!");
+            System.out.println("Withdraw registration crashed!");
         }
 
         try {
@@ -46,7 +42,7 @@ public class TakeUserAcc {
             System.out.println(e.getMessage());
         }
 
-        System.out.println("Which currency do you want fill?");
+        System.out.println("Which currency do you want withdraw?");
         System.out.println("Please, enter [1] for BYN, [2] for USD, [3] for RUB and [4] for EUR.");
         curreciesExtract();
     }
@@ -54,7 +50,6 @@ public class TakeUserAcc {
 
     public void withdraw(int entrance, int summ) {
 
-        int cash = summ;
         String curr = "";
 
         if (entrance == 1) {
@@ -69,39 +64,56 @@ public class TakeUserAcc {
         } else if (entrance == 4) {
 
             curr = "EUR";
-        } else {
-
-
         }
 
         try (Statement statement = co.createStatement();) {
 
             String query1 = "SELECT UserId FROM Users WHERE name = '" + userName + "' ";
+            System.out.println("Query1 = " + query1);
             ResultSet rs1 = statement.executeQuery(query1);
-            System.out.println("rs1 = " + rs1);
+            while (rs1.next()) {
+                rsOne = rs1.getString(1);
+            }
 
-            String query2 = "SELECT accountId FROM Accounts WHERE userId = '" + rs1 + "' ";
+            System.out.println("rs1 = " + rsOne);
+
+            String query2 = "SELECT acoountId FROM Accounts WHERE userId = '" + rsOne + "' AND currency = '" + curr +"'";
+            System.out.println("Query2= " + query2);
+
             ResultSet rs2 = statement.executeQuery(query2);
-            System.out.println("rs2 = " + rs2);
+            while (rs2.next()) {
+                rsTwo = rs2.getString(1);
+            }
 
-            String query3 = "SELECT balance FROM Accounts WHERE userId = '" + rs1 + "' AND currency = '" + curr + "'";
+            System.out.println("rs2 = " + rsTwo);
+
+            String query3 = "SELECT balance FROM Accounts WHERE userId = '" + rsOne + "' AND currency = '" + curr + "'";
+            System.out.println("Query3= " + query3);
             ResultSet rs3 = statement.executeQuery(query3);
-            System.out.println("rs3 = " + rs3);
-            int pars = Integer.parseInt(String.valueOf(rs3));
-            cash = cash - pars;
+            while (rs3.next()) {
+                rsThree = rs3.getString(1);
+            }
+            System.out.println("rs3 = " + rsThree);
+            int pars = Integer.parseInt(String.valueOf(rsThree));
+            pars -= summ;
 
-            if(cash > 0) {
-                String query4 = "INSERT INTO Account (balance) VALUES ('" + cash + "') WHERE accountId = '" + rs2 + "' " +
-                        "AND currency = '" + curr + "' ";
+            if(pars > 0) {
+                String query4 = "UPDATE Accounts SET balance = ('" + pars + "') WHERE acoountId = '" + rsTwo + "'";
+                statement.executeUpdate(query4);
 
-                ResultSet rs4 = statement.executeQuery(query4);
-                System.out.println("rs4 = " + rs4);
-                rs4.close();
+                String q4 = "SELECT balance FROM Accounts WHERE acoountId = '" + rsTwo + "'";
+                ResultSet rs5 = statement.executeQuery(q4);
+
+                while (rs5.next()) {
+                    rsFour = rs5.getString(1);
+                }
+                System.out.println("rs5 = " + rsFour);
+//                rs4.close();
+                rs5.close();
 
             } else {
                 System.out.println("Your haven't enough money. Please, keep calm and carry on!");
-                AddUserAcc addUserAcc = new AddUserAcc();
-                addUserAcc.accRegistration();
+                questing();
             }
 
             rs1.close();
@@ -113,5 +125,7 @@ public class TakeUserAcc {
             System.out.println(e.getMessage());
             System.out.println("Withdrawing crashed!");
         }
+
+        questing();
     }
 }

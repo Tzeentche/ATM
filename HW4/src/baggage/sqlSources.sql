@@ -26,3 +26,7 @@ FOREIGN KEY (accountId) REFERENCES Accounts (accountId)
 INSERT INTO Users (name, address) VALUES ("name", "address");
 
 select * from users;
+
+select * from Accounts;
+
+select * from Transactions;

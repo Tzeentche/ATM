@@ -2,36 +2,29 @@ package addAcc;
 
 import registration.NewUserReg;
 import usersInteractive.UsInteract;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.*;
-
+import static registration.NewUserReg.DBDriver;
+import static registration.NewUserReg.DBUrl;
 import static registration.NewUserReg.*;
-import static usersInteractive.UsInteract.fillOrWithdraw;
+import static usersInteractive.UsInteract.*;
 
 public class AddUserAcc {
 
-    enum Currencies { BYN, USD, RUB, EUR};
-
     Connection co;
-    String account = "";
-    UsInteract ui = new UsInteract();
-    String valute = "";
-    String usersId = "";
-    NewUserReg newUserReg = new NewUserReg();
-    String userName = newUserReg.getName();
-    Currencies[] currencies = Currencies.values();
+    String userName;
+    String[] currencies = {"BYN", "USD", "RUB", "EUR"};
 
     public void accRegistration() {
 
+        userName = getName();
+        String rsOne = "";
         try {
 
             Class.forName(DBDriver);
             co = DriverManager.getConnection(DBUrl);
-            System.out.println("Connected1");
-            co.close();
-            System.out.println("Close connection");
+            System.out.println("ConnectedAcc");
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -39,15 +32,24 @@ public class AddUserAcc {
         }
 
         try (Statement statement = co.createStatement();) {
-            String query1 = "SELECT UserId FROM Users WHERE name = '"+ userName +"' ";
+            System.out.println("GetName = " + userName);
+            String query1 = "SELECT UserId FROM Users WHERE name = '" + userName + "' ";
+            System.out.println("Query1 = " + query1);
             ResultSet rs1 = statement.executeQuery(query1);
+            while (rs1.next()) {
+                rsOne = rs1.getString(1);
+            }
 
-            for(Currencies s : currencies) {
-                String query2 = "INSERT INTO Account (userId, balance, currency) " +
-                        "VALUES ('" + rs1 + "', '" + 0 + "', '" + currencies + "')";
+            System.out.println("rs1= " + rsOne);
 
-                ResultSet rs2 = statement.executeQuery(query2);
-                rs2.close();
+            for (String s : currencies) {
+
+                String query2 = "INSERT INTO Accounts (userId, balance, currency) " +
+                        "VALUES ('" + rsOne + "', '" + 0 + "', '" + s + "')";
+
+                int rs2 = statement.executeUpdate(query2);
+                System.out.println("rs2= " + s);
+//                rs2.close();
             }
 
             System.out.println("All is correct!");
@@ -56,6 +58,7 @@ public class AddUserAcc {
 
         } catch (Exception e) {
 
+            System.out.println("Mistake:");
             System.out.println(e.getMessage());
         }
 
@@ -69,6 +72,10 @@ public class AddUserAcc {
             System.out.println(e.getMessage());
         }
 
+        questing();
+    }
+
+    public static void questing() {
         System.out.println("Do you want fill or withdraw money?");
         System.out.println("Please, enter [F] for Fill, [W] for Withdraw or [E] for Exit.");
         fillOrWithdraw();

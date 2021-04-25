@@ -9,24 +9,27 @@ public class NewUserReg {
 
     public static String DBDriver = "org.sqlite.JDBC";
     public static String DBUrl = "jdbc:sqlite:.\\src\\baggage\\ATM.db";
-    String name;
+    NewUserReg newUserReg;
+    static String name;
     String address;
     Connection co;
 
     public void usersRegistration() {
 
+        newUserReg = new NewUserReg();
         System.out.println("Now you can pass the registration.");
         System.out.println("Enter your name, please!");
         name = usersInput();
+        System.out.println("Name= " + name);
 
         System.out.println("Do you want to register your address?");
-        usersAdress();
+        address = usersAdress();
+        System.out.println("Address NewUserReg = " + address);
 
-        NewUserReg newUserReg = new NewUserReg();
-        newUserReg.open();
-        newUserReg.insert();
-        newUserReg.select();
-        newUserReg.close();
+        open();
+        insert();
+        select();
+        close();
 
         System.out.println("Do you want to register your Account?");
         usersMessage(2);
@@ -40,7 +43,7 @@ public class NewUserReg {
             co = DriverManager.getConnection(DBUrl);
             System.out.println("Connected1");
 //            co.close();
-            System.out.println("Close connection");
+//            System.out.println("Close connection");
 
         } catch (Exception e) {
              System.out.println(e.getMessage());
@@ -50,13 +53,14 @@ public class NewUserReg {
 
     void insert() {
 
+        System.out.println("Address= " + address);
+
         String query = "INSERT INTO Users (name, address) " +
                 "VALUES ('" + name + "', '" + address + "')";
 
         try (Statement statement = co.createStatement();) {
             statement.executeUpdate(query);
             System.out.println("Rows added!");
-            statement.close();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -95,7 +99,7 @@ public class NewUserReg {
         }
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
