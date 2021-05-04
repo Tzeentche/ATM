@@ -1,8 +1,6 @@
 package base;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.*;
 
 public class BaseManipul {
 
@@ -61,7 +59,7 @@ public class BaseManipul {
 
     public void createTransactions() {
 
-        String query = "CREATE TABLE IF NOT EXISTS Transactions (transactionId INTEGER PRIMARY KEY AUTOINCREMENT, " +
+        String query = "CREATE TABLE IF NOT EXISTS Transactions (transactinId INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "accountId INTEGER (10), amount INTEGER (15), FOREIGN KEY (accountId) " +
                 "REFERENCES Accounts (accountId));";
 

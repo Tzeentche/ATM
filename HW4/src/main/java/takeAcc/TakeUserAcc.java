@@ -8,6 +8,7 @@ import java.sql.*;
 import static addAcc.AddUserAcc.*;
 import static registration.NewUserReg.*;
 import static usersInteractive.UsInteract.*;
+import static transactions.Transactions.*;
 
 public class TakeUserAcc {
 
@@ -108,6 +109,8 @@ public class TakeUserAcc {
                     rsFour = rs5.getString(1);
                 }
                 System.out.println("rs5 = " + rsFour);
+
+                insertTransaction(Integer.parseInt(rsTwo), -summ);
 //                rs4.close();
                 rs5.close();
 

@@ -17,7 +17,7 @@ FOREIGN KEY (userId) REFERENCES Users (userId)
 );
 
 CREATE TABLE Transactions (
-transactionId INTEGER PRIMARY KEY AUTOINCREMENT,
+transactinId INTEGER PRIMARY KEY AUTOINCREMENT,
 accountId INTEGER (10),
 amount INTEGER (15),
 FOREIGN KEY (accountId) REFERENCES Accounts (accountId)

@@ -5,6 +5,7 @@ import java.sql.*;
 import static registration.NewUserReg.*;
 import static usersInteractive.UsInteract.*;
 import static addAcc.AddUserAcc.*;
+import static transactions.Transactions.*;
 
 public class FillUserAcc {
 
@@ -104,6 +105,9 @@ public class FillUserAcc {
                         }
 
                         System.out.println("rs5 = " + rsFour);
+
+                        insertTransaction(Integer.parseInt(rsTwo), summ);
+
 //                        rs4.close();
                         rs5.close();
 

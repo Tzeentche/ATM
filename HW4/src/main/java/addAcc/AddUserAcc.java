@@ -2,8 +2,6 @@ package addAcc;
 
 import registration.NewUserReg;
 import usersInteractive.UsInteract;
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.*;
 import static registration.NewUserReg.DBDriver;
 import static registration.NewUserReg.DBUrl;
@@ -14,12 +12,16 @@ public class AddUserAcc {
 
     Connection co;
     String userName;
-    String[] currencies = {"BYN", "USD", "RUB", "EUR"};
+    int currencies = 1;
 
     public void accRegistration() {
 
         userName = getName();
         String rsOne = "";
+
+        System.out.println("How much accounts do you want to have?");
+        currencies = usersInt();
+
         try {
 
             Class.forName(DBDriver);

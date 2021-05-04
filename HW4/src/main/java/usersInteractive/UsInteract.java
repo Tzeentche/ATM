@@ -7,9 +7,10 @@ import takeAcc.TakeUserAcc;
 
 import java.util.Scanner;
 
+import static addAcc.AddUserAcc.questing;
+
 public class UsInteract {
 
-    static Scanner scanner = new Scanner(System.in);
     static NewUserReg newUserReg = new NewUserReg();
     static AddUserAcc addUserAcc = new AddUserAcc();
     static FillUserAcc fillUserAcc = new FillUserAcc();
@@ -18,17 +19,18 @@ public class UsInteract {
 
     public static String usersInput() {
 
-        scanner.reset();
+        Scanner scanner = new Scanner(System.in);
 
         String incoming;
-        if (scanner.hasNext()){
+        if (scanner.hasNextLine()){
             incoming = scanner.nextLine();
         } else {
-            System.out.println("You entered wrong symbol. Please, try again.");
-            scanner.nextLine();
+            System.out.println("You entered wrong STR symbol. Please, try again.");
+
             incoming = usersInput();
         }
-        System.out.println("Value is= " + incoming);
+        System.out.println("STR Value is= " + incoming);
+        scanner.reset();
 //        scanner.close();
 
         return incoming;
@@ -36,17 +38,38 @@ public class UsInteract {
 
     public static int usersInt() {
 
-        scanner.reset();
+        Scanner scanner = new Scanner(System.in);
 
         int variable;
         if (scanner.hasNextInt()){
             variable = scanner.nextInt();
 
         } else {
-            System.out.println("You entered wrong symbol. Please, try again.");
-            scanner.nextInt();
+            System.out.println("You entered wrong INT symbol. Please, try again.");
+
             variable = usersInt();
         }
+        System.out.println("INT Value is= " + variable);
+        scanner.reset();
+//        scanner.close();
+        return variable;
+    }
+
+    public static double usersDoub() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        double variable;
+        if (scanner.hasNextDouble()){
+            variable = scanner.nextDouble();
+
+        } else {
+            System.out.println("You entered wrong DOUBLE symbol. Please, try again.");
+
+            variable = usersDoub();
+        }
+        System.out.println("Double Value is= " + variable);
+        scanner.reset();
 //        scanner.close();
         return variable;
     }
@@ -116,8 +139,7 @@ public class UsInteract {
 
         } else {
             System.out.println("It's seems like unknown symblom. Please, try again next time.");
-            result = usersInput();
-//            fillOrWithdraw();
+            questing();
         }
     }
 
